@@ -81,79 +81,124 @@
     </div>
 </div>
 <div class="i_nav_banner">
-    <div class="inner clearfix">
-        <div class="navigation fl">
-            <dl class="wrap_out">
-                <dt class="tit">
-                    <a class="aa" href="javascript:;">Women Clothing</a>
-                    <a class="aa" href="javascript:;">Clothing</a>
-                </dt>
-                <dd class="box_out">
-                    <div class="box clearfix">
-                        <div class="row fl">
-                            <div class="wrap">
-                                <h2 class="title">title</h2>
-                                <ul>
-                                    <li><a class="list" href="javascript:;">accessories</a></li>
-                                    <li><a class="list" href="javascript:;">accessories</a></li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="row fl">
-                            <div class="wrap">
-                                <h2 class="title">title</h2>
-                                <ul>
-                                    <li><a class="list" href="javascript:;">accessories</a></li>
-                                    <li><a class="list" href="javascript:;">accessories</a></li>
-                                </ul>
-                            </div>
+    <div class="banner">
+        <div class="focusBox" style="margin:0 auto">
+            <ul class="pic">
+                <li>
+                    <a class="img_out" href="javascript:;" target="_blank">
+                        <img class="img" src="data/images/banner1.jpg" alt="">
+                    </a>
+                </li>
+                <li>
+                    <a class="img_out" href="javascript:;" target="_blank">
+                        <img class="img" src="data/images/banner2.jpg" alt="">
+                    </a>
+                </li>
+                <li>
+                    <a class="img_out" href="javascript:;" target="_blank">
+                        <img class="img" src="data/images/banner3.jpg" alt="">
+                    </a>
+                </li>
+            </ul>
+            <a class="prev" href="javascript:void(0)"></a>
+            <a class="next" href="javascript:void(0)"></a>
+            <ul class="hd">
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+        </div>
+    </div>
+    <script type="text/html" id="navigationT">
+    {{each list as value i}}
+        <li>索引 {{i + 1}} ：{{value}}</li>
+        <dl class="wrap_out">
+            <dt class="tit">
+                {{each value.tltle as value i}}
+                <a class="aa" href="javascript:;">{{value}}</a>
+                {{/each}}
+            </dt>
+            <dd class="box_out">
+                <div class="box clearfix">
+                    <div class="row fl">
+                        <div class="wrap">
+                            <h2 class="title">title</h2>
+                            <ul>
+                                <li><a class="list" href="javascript:;">accessories</a></li>
+                                <li><a class="list" href="javascript:;">accessories</a></li>
+                            </ul>
                         </div>
                     </div>
-                </dd>
-            </dl>
-            <dl class="wrap_out">
-                <dt class="tit">
-                    <a class="aa" href="javascript:;">Women Clothing</a>
-                    <a class="aa" href="javascript:;">Clothing</a>
-                </dt>
-                <dd class="box_out">
-                    <div class="box clearfix">
-                        <div class="row fl">
-                            <div class="wrap">
-                                <h2 class="title">title</h2>
-                                <ul>
-                                    <li><a class="list" href="javascript:;">Watches</a></li>
-                                    <li><a class="list" href="javascript:;">Watches</a></li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="row fl">
-                            <div class="wrap">
-                                <h2 class="title">title</h2>
-                                <ul>
-                                    <li><a class="list" href="javascript:;">Watches</a></li>
-                                    <li><a class="list" href="javascript:;">Watches</a></li>
-                                </ul>
-                            </div>
+                    <div class="row fl">
+                        <div class="wrap">
+                            <h2 class="title">title</h2>
+                            <ul>
+                                <li><a class="list" href="javascript:;">accessories</a></li>
+                                <li><a class="list" href="javascript:;">accessories</a></li>
+                            </ul>
                         </div>
                     </div>
-                </dd>
-            </dl>
-        </div>
-        <div class="banner fl">
-            <div class="focusBox" style="margin:0 auto">
-                <ul class="pic">
-                    <li><a style="background:url(http://pic1.win4000.com/wallpaper/2017-12-19/5a387cb8439ea.jpg) no-repeat center top;" href="javascript:;" target="_blank"></a></li>
-                    <li><a style="background:url(http://pic1.win4000.com/wallpaper/2017-12-19/5a387cbbd1eae.jpg) no-repeat center top;" href="javascript:;" target="_blank"></a></li>
-                </ul>
-                <a class="prev" href="javascript:void(0)"></a>
-                <a class="next" href="javascript:void(0)"></a>
-                <ul class="hd">
-                    <li></li>
-                    <li></li>
-                </ul>
-            </div>
-        </div>
+                </div>
+            </dd>
+        </dl>
+    {{/each}}
+    </script>
+    <div class="navigation" id="navigation">
+        <dl class="wrap_out">
+            <dt class="tit">
+                <a class="aa" href="javascript:;">Women’s Clothing</a>
+            </dt>
+            <dd class="box_out">
+                <div class="box clearfix">
+                    <div class="row fl">
+                        <div class="wrap">
+                            <h2 class="title">title</h2>
+                            <ul>
+                                <li><a class="list" href="javascript:;">accessories</a></li>
+                                <li><a class="list" href="javascript:;">accessories</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="row fl">
+                        <div class="wrap">
+                            <h2 class="title">title</h2>
+                            <ul>
+                                <li><a class="list" href="javascript:;">accessories</a></li>
+                                <li><a class="list" href="javascript:;">accessories</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </dd>
+        </dl>
+        <dl class="wrap_out">
+            <dt class="tit">
+                <a class="aa" href="javascript:;">Women Clothing</a>
+                <a class="aa" href="javascript:;">Clothing</a>
+            </dt>
+            <dd class="box_out">
+                <div class="box clearfix">
+                    <div class="row fl">
+                        <div class="wrap">
+                            <h2 class="title">title</h2>
+                            <ul>
+                                <li><a class="list" href="javascript:;">Watches</a></li>
+                                <li><a class="list" href="javascript:;">Watches</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="row fl">
+                        <div class="wrap">
+                            <h2 class="title">title</h2>
+                            <ul>
+                                <li><a class="list" href="javascript:;">Watches</a></li>
+                                <li><a class="list" href="javascript:;">Watches</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </dd>
+        </dl>
     </div>
 </div>
 <div class="i_hot">
@@ -417,7 +462,9 @@
 </div>
 <script type="text/javascript" src="./lib/jquery.min.js"></script>
 <script type="text/javascript" src="./lib/jquery.SuperSlide.2.1.js"></script>
+<script type="text/javascript" src="./lib/template-web.js"></script>
 <script type="text/javascript" src="./js/public.js"></script>
+<script type="text/javascript" src="./data/index.js"></script>
 <script type="text/javascript" src="./js/index.js"></script>
 </body>
 </html>

@@ -1,20 +1,9 @@
-.i_nav_banner { height: 600px; width: 100%; background-color: #FCF9F7; }
-.i_nav_banner .navigation { width: 340px; height: 600px; background-color: #F9F3EF; position: relative; }
-.i_nav_banner .navigation .wrap_out { width: 100%; height: 45px; }
-.i_nav_banner .navigation .wrap_out .tit { padding: 0 0 0 20px; height: 45px; line-height: 45px; }
-.i_nav_banner .navigation .wrap_out:hover .tit { background-color: #fff; }
-.i_nav_banner .navigation .wrap_out .tit .aa { font-size: 14px; color: #666; height: 16px; line-height: 16px; padding: 0 8px; border-right: 1px solid #dedede; }
-.i_nav_banner .navigation .wrap_out .tit .aa:nth-last-child(1) { border-right: none; }
-.i_nav_banner .navigation .wrap_out .tit .aa:hover { color: #e62e04; }
-.i_nav_banner .navigation .box_out { width: 530px; height: 600px; padding: 0 10px; background-color: #fff; position: absolute; top: 0; left: 340px; overflow: hidden; z-index: 9999; display: none; }
-.i_nav_banner .navigation .box_out .row { width: 150px; margin: 0 10px; }
-.i_nav_banner .navigation .box_out .wrap .title { font-size: 16px; font-weight: bold; line-height: 2; border-bottom: 1px solid #dedede; padding-top: 10px; }
-.i_nav_banner .navigation .box_out .wrap .list { font-size: 14px; line-height: 2;}
-.i_nav_banner .navigation .box_out .wrap .list:hover { color: #e62e04; }
-.i_nav_banner .banner { width: 860px; height: 600px; }
-.i_nav_banner .banner .focusBox { position: relative; width:100%; min-width: 860px; height:600px; overflow: hidden; }
-.i_nav_banner .banner .focusBox .pic{ width: 100%; }
-.i_nav_banner .banner .focusBox .pic a { width:100%; height:600px; display: block; }
+.i_nav_banner { height: 480px; width: 100%; background-color: #FCF9F7; position: relative; }
+.i_nav_banner .banner { width: 100%; height: 100%; }
+.i_nav_banner .banner .focusBox { position: relative; width:100%; height:480px; overflow: hidden; }
+.i_nav_banner .banner .focusBox .pic { width: 100%; }
+.i_nav_banner .banner .focusBox .pic .img_out { width:100%; height:480px; display: block; position: relative; }
+.i_nav_banner .banner .focusBox .pic .img { display: block; }
 .i_nav_banner .banner .focusBox .hd { width:100%;  position:absolute; z-index:999; bottom:0; left:0; height:30px; line-height:30px; text-align:center;}
 .i_nav_banner .banner .focusBox .hd li{ cursor:pointer; display:inline-block; *display:inline; zoom:1; width:11px; height:11px; border-radius: 50%; margin: 4px; background:#ffffff; overflow: hidden; line-height: 9999px; opacity: 0.4; z-index: 9999999; }
 .i_nav_banner .banner .focusBox .hd .on{ opacity:0.6; background:#e62e04; }
@@ -24,6 +13,18 @@
 .i_nav_banner .banner .focusBox .next { background-image:url(../images/i_switch.png); background-position:-158px 0; right:0 }
 .i_nav_banner .banner .focusBox .prev:hover,
 .i_nav_banner .banner .focusBox .next:hover { filter:alpha(opacity=60); -moz-opacity:.6; opacity:.6; }
+.i_nav_banner .navigation { width: 240px; height: 480px; background-color: rgba(248,247,247,.8); position: absolute; left: 50%; top: 0; margin-left: -610px; }
+.i_nav_banner .navigation .wrap_out { width: 100%; height: 45px; }
+.i_nav_banner .navigation .wrap_out .tit { padding: 0 0 0 20px; height: 45px; line-height: 45px; }
+.i_nav_banner .navigation .wrap_out:hover .tit { background-color: #fff; }
+.i_nav_banner .navigation .wrap_out .tit .aa { font-size: 14px; color: #666; height: 16px; line-height: 16px; padding: 0 8px; border-right: 1px solid #dedede; }
+.i_nav_banner .navigation .wrap_out .tit .aa:nth-last-child(1) { border-right: none; }
+.i_nav_banner .navigation .wrap_out .tit .aa:hover { color: #e62e04; }
+.i_nav_banner .navigation .box_out { width: 530px; height: 480px; padding: 0 10px; background-color: #fff; position: absolute; top: 0; left: 240px; overflow: hidden; z-index: 9999; display: none; }
+.i_nav_banner .navigation .box_out .row { width: 150px; margin: 0 10px; }
+.i_nav_banner .navigation .box_out .wrap .title { font-size: 16px; font-weight: bold; line-height: 2; border-bottom: 1px solid #dedede; padding-top: 10px; }
+.i_nav_banner .navigation .box_out .wrap .list { font-size: 14px; line-height: 2;}
+.i_nav_banner .navigation .box_out .wrap .list:hover { color: #e62e04; }
 
 .i_hot { width: 100%; height: 630px; background-color: #fff; }
 .i_hot .douban{ width:1200px; padding-top:10px;  overflow:hidden;   }
