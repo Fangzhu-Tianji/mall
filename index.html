@@ -8,6 +8,7 @@
 <meta name="baidu-site-verification" content="XAGbWBFpll" />
 <title>mall</title>
 <!-- <link type="image/x-icon" rel="shortcut icon" href="images/favicon.ico" /> -->
+<link rel="stylesheet" href="//at.alicdn.com/t/font_582284_4iydg0lg85l2qpvi.css">
 <link rel="stylesheet" href="./css/base.css">
 <link rel="stylesheet" href="./css/style.css">
 </head>
@@ -62,11 +63,11 @@
                 <div class="search fl">
                     <input class="search_info fl" type="text" placeholder="I'm shopping for..." maxlength="50">
                     <button class="search_btn fl">
-                        <img src="./images/nav_search.png" alt="">
+                        <i class="iconfont icon-sousuo"></i>
                     </button>
                 </div>
                 <div class="info fr">
-                    <img class="pic fl" src="./images/nav_shop.png" alt="">
+                    <i class="pic fl iconfont icon-31gouwuche"></i>
                     <div class="wrap fl">
                         <p class="num">0</p>
                         <p class="cart">Cart</p>
@@ -74,8 +75,11 @@
                 </div>
             </div>
             <div class="hot">
-                <a class="link" href="javascript:;">hair accessories</a>
-                <a class="link" href="javascript:;">hair accessories</a>
+                <a class="link" href="javascript:;">wireless mouse</a>
+                <a class="link" href="javascript:;">bag</a>
+                <a class="link" href="javascript:;">dash cam</a>
+                <a class="link" href="javascript:;">nose ring</a>
+                <a class="link" href="javascript:;">survival</a>
             </div>
         </div>
     </div>
@@ -100,8 +104,8 @@
                     </a>
                 </li>
             </ul>
-            <a class="prev" href="javascript:void(0)"></a>
-            <a class="next" href="javascript:void(0)"></a>
+            <a class="prev" href="javascript:void(0)"><i class="iconfont icon-31fanhui1"></i></a>
+            <a class="next" href="javascript:void(0)"><i class="iconfont icon-31fanhui2"></i></a>
             <ul class="hd">
                 <li></li>
                 <li></li>
@@ -111,7 +115,6 @@
     </div>
     <script type="text/html" id="navigationT">
     {{each list as value i}}
-        <li>索引 {{i + 1}} ：{{value}}</li>
         <dl class="wrap_out">
             <dt class="tit">
                 {{each value.tltle as value i}}
@@ -120,24 +123,20 @@
             </dt>
             <dd class="box_out">
                 <div class="box clearfix">
+                    {{each value.boxOut as value i}}
                     <div class="row fl">
+                        {{each value as value i}}
                         <div class="wrap">
-                            <h2 class="title">title</h2>
+                            <h2 class="title">{{value.tit}}</h2>
                             <ul>
-                                <li><a class="list" href="javascript:;">accessories</a></li>
-                                <li><a class="list" href="javascript:;">accessories</a></li>
+                                {{each value.content as value i}}
+                                <li><a class="list" href="javascript:;">{{value}}</a></li>
+                                {{/each}}
                             </ul>
                         </div>
+                        {{/each}}
                     </div>
-                    <div class="row fl">
-                        <div class="wrap">
-                            <h2 class="title">title</h2>
-                            <ul>
-                                <li><a class="list" href="javascript:;">accessories</a></li>
-                                <li><a class="list" href="javascript:;">accessories</a></li>
-                            </ul>
-                        </div>
-                    </div>
+                    {{/each}}
                 </div>
             </dd>
         </dl>
@@ -217,56 +216,56 @@
                 <ul>
                     <li>
                         <a href="javascrpt:;" target="_blank">
-                            <img class="pic" src="https://ss0.bdstatic.com/70cFuHSh_Q1YnxGkpoWK1HF6hhy/it/u=62705028,1604552902&fm=27&gp=0.jpg" />
+                            <img class="pic" src="data/images/pic1.png" />
                             <p class="name texthide">Galaxy S6</p>
                             <p class="price">US $26.73</p>
                         </a>
                     </li>
                     <li>
                         <a href="javascrpt:;" target="_blank">
-                            <img class="pic" src="https://ss0.bdstatic.com/70cFuHSh_Q1YnxGkpoWK1HF6hhy/it/u=62705028,1604552902&fm=27&gp=0.jpg" />
+                            <img class="pic" src="data/images/pic2.png" />
                             <p class="name texthide">Galaxy S6</p>
                             <p class="price">US $26.73</p>
                         </a>
                     </li>
                     <li>
                         <a href="javascrpt:;" target="_blank">
-                            <img class="pic" src="https://ss0.bdstatic.com/70cFuHSh_Q1YnxGkpoWK1HF6hhy/it/u=62705028,1604552902&fm=27&gp=0.jpg" />
+                            <img class="pic" src="data/images/pic3.png" />
                             <p class="name texthide">Galaxy S6</p>
                             <p class="price">US $26.73</p>
                         </a>
                     </li>
                     <li>
                         <a href="javascrpt:;" target="_blank">
-                            <img class="pic" src="https://ss0.bdstatic.com/70cFuHSh_Q1YnxGkpoWK1HF6hhy/it/u=62705028,1604552902&fm=27&gp=0.jpg" />
+                            <img class="pic" src="data/images/pic4.png" />
                             <p class="name texthide">Galaxy S6</p>
                             <p class="price">US $26.73</p>
                         </a>
                     </li>
                     <li>
                         <a href="javascrpt:;" target="_blank">
-                            <img class="pic" src="https://ss0.bdstatic.com/70cFuHSh_Q1YnxGkpoWK1HF6hhy/it/u=62705028,1604552902&fm=27&gp=0.jpg" />
+                            <img class="pic" src="data/images/pic5.png" />
                             <p class="name texthide">Galaxy S6</p>
                             <p class="price">US $26.73</p>
                         </a>
                     </li>
                     <li>
                         <a href="javascrpt:;" target="_blank">
-                            <img class="pic" src="https://ss2.bdstatic.com/70cFvnSh_Q1YnxGkpoWK1HF6hhy/it/u=3383789762,960249868&fm=27&gp=0.jpg" />
+                            <img class="pic" src="data/images/pic6.png" />
                             <p class="name texthide">Galaxy S6</p>
                             <p class="price">US $26.73</p>
                         </a>
                     </li>
                     <li>
                         <a href="javascrpt:;" target="_blank">
-                            <img class="pic" src="https://ss2.bdstatic.com/70cFvnSh_Q1YnxGkpoWK1HF6hhy/it/u=3383789762,960249868&fm=27&gp=0.jpg" />
+                            <img class="pic" src="data/images/pic7.png" />
                             <p class="name texthide">Galaxy S6</p>
                             <p class="price">US $26.73</p>
                         </a>
                     </li>
                     <li>
                         <a href="javascrpt:;" target="_blank">
-                            <img class="pic" src="https://ss2.bdstatic.com/70cFvnSh_Q1YnxGkpoWK1HF6hhy/it/u=3383789762,960249868&fm=27&gp=0.jpg" />
+                            <img class="pic" src="data/images/pic8.png" />
                             <p class="name texthide">Galaxy S6</p>
                             <p class="price">US $26.73</p>
                         </a>
@@ -276,7 +275,7 @@
         </div>
     </div>
     <a class="i_banner_hot" href="javascript:;">
-        <img class="heng" src="./images/i_banner_heng.jpg" alt="">
+        <img class="heng" src="data/images/i_banner_heng1.jpg" alt="">
     </a>
 </div>
 <div class="i_product">
@@ -287,32 +286,32 @@
         </div>
         <div class="content clearfix">
             <a class="wrap fl" href="javascrpt:;" target="_blank">
-                <img class="pic" src="https://ss2.bdstatic.com/70cFvnSh_Q1YnxGkpoWK1HF6hhy/it/u=3383789762,960249868&fm=27&gp=0.jpg" />
+                <img class="pic" src="data/images/pic1.png" />
                 <p class="name texthide">Galaxy S6</p>
                 <p class="price">US $26.73</p>
             </a>
             <a class="wrap fl" href="javascrpt:;" target="_blank">
-                <img class="pic" src="https://ss2.bdstatic.com/70cFvnSh_Q1YnxGkpoWK1HF6hhy/it/u=3383789762,960249868&fm=27&gp=0.jpg" />
+                <img class="pic" src="data/images/pic2.png" />
                 <p class="name texthide">Galaxy S6</p>
                 <p class="price">US $26.73</p>
             </a>
             <a class="wrap fl" href="javascrpt:;" target="_blank">
-                <img class="pic" src="https://ss2.bdstatic.com/70cFvnSh_Q1YnxGkpoWK1HF6hhy/it/u=3383789762,960249868&fm=27&gp=0.jpg" />
+                <img class="pic" src="data/images/pic8.png" />
                 <p class="name texthide">Galaxy S6</p>
                 <p class="price">US $26.73</p>
             </a>
             <a class="wrap fl" href="javascrpt:;" target="_blank">
-                <img class="pic" src="https://ss2.bdstatic.com/70cFvnSh_Q1YnxGkpoWK1HF6hhy/it/u=3383789762,960249868&fm=27&gp=0.jpg" />
+                <img class="pic" src="data/images/pic6.png" />
                 <p class="name texthide">Galaxy S6</p>
                 <p class="price">US $26.73</p>
             </a>
             <a class="wrap fl" href="javascrpt:;" target="_blank">
-                <img class="pic" src="https://ss2.bdstatic.com/70cFvnSh_Q1YnxGkpoWK1HF6hhy/it/u=3383789762,960249868&fm=27&gp=0.jpg" />
+                <img class="pic" src="data/images/pic4.png" />
                 <p class="name texthide">Galaxy S6</p>
                 <p class="price">US $26.73</p>
             </a>
             <a class="wrap fl" href="javascrpt:;" target="_blank">
-                <img class="pic" src="https://ss2.bdstatic.com/70cFvnSh_Q1YnxGkpoWK1HF6hhy/it/u=3383789762,960249868&fm=27&gp=0.jpg" />
+                <img class="pic" src="data/images/pic7.png" />
                 <p class="name texthide">Galaxy S6</p>
                 <p class="price">US $26.73</p>
             </a>
@@ -321,7 +320,7 @@
 </div>
 <a class="i_banner_heng" href="javascript:;">
     <div class="inner">
-        <img class="heng" src="./images/i_banner_heng.jpg" alt="">
+        <img class="heng" src="data/images/i_banner_heng2.jpg" alt="">
     </div>
 </a>
 <div class="i_product">
@@ -332,32 +331,32 @@
         </div>
         <div class="content clearfix">
             <a class="wrap fl" href="javascrpt:;" target="_blank">
-                <img class="pic" src="https://ss2.bdstatic.com/70cFvnSh_Q1YnxGkpoWK1HF6hhy/it/u=3383789762,960249868&fm=27&gp=0.jpg" />
+                <img class="pic" src="data/images/pic8.png" />
                 <p class="name texthide">Galaxy S6</p>
                 <p class="price">US $26.73</p>
             </a>
             <a class="wrap fl" href="javascrpt:;" target="_blank">
-                <img class="pic" src="https://ss2.bdstatic.com/70cFvnSh_Q1YnxGkpoWK1HF6hhy/it/u=3383789762,960249868&fm=27&gp=0.jpg" />
+                <img class="pic" src="data/images/pic5.png" />
                 <p class="name texthide">Galaxy S6</p>
                 <p class="price">US $26.73</p>
             </a>
             <a class="wrap fl" href="javascrpt:;" target="_blank">
-                <img class="pic" src="https://ss2.bdstatic.com/70cFvnSh_Q1YnxGkpoWK1HF6hhy/it/u=3383789762,960249868&fm=27&gp=0.jpg" />
+                <img class="pic" src="data/images/pic3.png" />
                 <p class="name texthide">Galaxy S6</p>
                 <p class="price">US $26.73</p>
             </a>
             <a class="wrap fl" href="javascrpt:;" target="_blank">
-                <img class="pic" src="https://ss2.bdstatic.com/70cFvnSh_Q1YnxGkpoWK1HF6hhy/it/u=3383789762,960249868&fm=27&gp=0.jpg" />
+                <img class="pic" src="data/images/pic1.png" />
                 <p class="name texthide">Galaxy S6</p>
                 <p class="price">US $26.73</p>
             </a>
             <a class="wrap fl" href="javascrpt:;" target="_blank">
-                <img class="pic" src="https://ss2.bdstatic.com/70cFvnSh_Q1YnxGkpoWK1HF6hhy/it/u=3383789762,960249868&fm=27&gp=0.jpg" />
+                <img class="pic" src="data/images/pic6.png" />
                 <p class="name texthide">Galaxy S6</p>
                 <p class="price">US $26.73</p>
             </a>
             <a class="wrap fl" href="javascrpt:;" target="_blank">
-                <img class="pic" src="https://ss2.bdstatic.com/70cFvnSh_Q1YnxGkpoWK1HF6hhy/it/u=3383789762,960249868&fm=27&gp=0.jpg" />
+                <img class="pic" src="data/images/pic4.png" />
                 <p class="name texthide">Galaxy S6</p>
                 <p class="price">US $26.73</p>
             </a>
@@ -463,7 +462,6 @@
 <script type="text/javascript" src="./lib/jquery.min.js"></script>
 <script type="text/javascript" src="./lib/jquery.SuperSlide.2.1.js"></script>
 <script type="text/javascript" src="./lib/template-web.js"></script>
-<script type="text/javascript" src="./js/public.js"></script>
 <script type="text/javascript" src="./data/index.js"></script>
 <script type="text/javascript" src="./js/index.js"></script>
 </body>
